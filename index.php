@@ -16,7 +16,8 @@
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-    <main id="text">
+    <main>
+        <img src="img/aum_blanc.png" alt="" class="logo">
         <h1>rondeau-cameira.fr</h1>
     </main>
 </body>

@@ -1,99 +1,35 @@
 body {
     margin: auto;
     background-color: black;
-    color: white;
+	color: white;
+	text-align: center;
 }
-
+main {
+    margin-top: 30vh;
+	transform: translateY(-30%);
+}
 h1 {
-    font-size: 36px;
+	font-size: 22px;
 }
-
-h2 {
-    font-size: 32px;
+.logo {
+    width: 100px;
+    height: 100px;
 }
-
-p {
-    font-size: 34px;
-    font-weight: bold;
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .logo {
+        width: 125px;
+        height: 125px;
+    }
 }
-
-#barre_langues {
-    width: 200px;
-    height: 30px;
-    margin: 0;
-    padding: 10px;
-    padding-right: 15px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-}
-
-#barre_langues a {
-    margin: 0;
-    margin-left: 5px;
-    padding: 0;
-}
-
-#text {
-    width: 100%;
-    position: absolute;
-    top: 20%;
-    text-align: center;
-}
-
-.btn1 {
-	box-shadow: 0px 0px 7px 5px #ffffff;
-	background: linear-gradient(to bottom, #ffffff 5%, #787878 100%);
-	background-color: #ffffff;
-	border-radius: 10px;
-	border: 2px solid #666666;
-	display: inline-block;
-	cursor: pointer;
-	color: #000000;
-	font-family: Arial;
-	font-size: 34px;
-	font-weight: bold;
-	padding: 2px 7px;
-	text-decoration: none;
-	text-shadow: 1px 1px 0px #ffffff;
-}
-
-.btn2 {
-	box-shadow: 0px 0px 7px 5px #ffffff;
-	background: linear-gradient(to bottom, #787878 5%, #000000 100%);
-	background-color: #000000;
-	border-radius: 10px;
-	border: 2px solid #666666;
-	display: inline-block;
-	cursor: pointer;
-	color: #ffffff;
-	font-family: Arial;
-	font-size: 34px;
-	font-weight: bold;
-	padding: 2px 7px;
-	text-decoration: none;
-	text-shadow: 1px 1px 0px #ffffff;
-}
-
-.btn1:hover {
-	background: linear-gradient(to bottom, #787878 5%, #000000 100%);
-	background-color: #000000;
-	color: #ffffff;
-}
-
-.btn2:hover {
-	background: linear-gradient(to bottom, #ffffff 5%, #787878 100%);
-	background-color: #ffffff;
-	color: #000000;
-}
-
-.btn1:active {
-    position: relative;
-	top: 1px;
-}
-
-.btn2:active {
-    position: relative;
-	top: 1px;
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
 }
