@@ -1,0 +1,60 @@
+/*
+:root {
+    --dblue: #5c5d96cc;
+    --lightblue: #3c3d76;
+    --lightblue-mid: #3c3d7633;
+}
+*/
+body {
+    margin: auto;
+	text-align: center;
+}
+button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+footer {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+}
+h1 {
+	font-size: 22px;
+}
+main {
+    margin-top: 30vh;
+	transform: translateY(-30%);
+}
+#btn-dark {
+    border: 2px solid var(--light);
+    background: var(--dark);
+    color: var(--dark);
+}
+#btn-light {
+    border: 2px solid var(--dark);
+    background: var(--light);
+    color: var(--light);
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    .logo {
+        width: 125px;
+        height: 125px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+}
