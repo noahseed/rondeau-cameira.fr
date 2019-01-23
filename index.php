@@ -19,17 +19,30 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" media="all" href="css/main.css">
-    <link rel="stylesheet" media="all" href="css/theme-default.css" id="sCss">
     <script src="js/main.js"></script>
 </head>
-<body>
+<body id="theme" class="theme-dark">
     <main>
-        <img src="img/aum_white.png" alt="" id="logo">
-        <h1>rondeau-cameira.fr</h1>
+        <?php
+            if (!empty($_GET['page'])) {
+                $page = $_GET['page'];
+            }
+            else
+            {
+                $page = 'home';
+            }
+
+            $path = './App/'.$page.'.php';
+
+            if (is_file($path)) {
+                require $path;
+            }
+            
+        ?>
     </main>
     <footer>
-        <button id="btn-dark" onclick="vCss(this)" disabled="disabled">D</button>
-        <button id="btn-light" onclick="vCss(this)">L</button>
+        <button id="btn-dark" onclick="vCss()" disabled="disabled"></button>
+        <button id="btn-light" onclick="vCss()"></button>
     </footer>
 </body>
 </html>
