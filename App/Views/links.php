@@ -1,1 +1,10 @@
-
+<table>
+	<tr>
+		<th>ID</th>
+		<th>LIENS</th>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+</table>

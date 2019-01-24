@@ -29,6 +29,12 @@ h1 {
     margin: 0;
     padding: 0;
 }
+main {
+    /*display: flex;*/
+    position: fixed;
+    top: 100px;
+    left: 50px;
+}
 #btn-dark {
     border: 2px solid var(--light);
     background: var(--dark);
@@ -41,9 +47,11 @@ h1 {
 }
 #title {
     position: fixed;
-    width: 100vw;
-    top: 70px;
+    width: 100%;
+    top: 66px;
     left: 0;
+    margin-left: 90px;
+    margin-right: 20px;
 }
 .big-logo {
     margin-top: 30vh;
