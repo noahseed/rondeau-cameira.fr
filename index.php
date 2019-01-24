@@ -22,22 +22,24 @@
     <script src="js/main.js"></script>
 </head>
 <body id="theme" class="theme-dark">
+    <header>
+        <a href="/"><img src="img/aum_white.png" alt="" id="logo" class="small-logo"></a>
+        <h1 class="small-title">rondeau-cameira.fr</h1>
+    <hr id="title">
+    </header>
     <main>
         <?php
-            if (!empty($_GET['page'])) {
-                $page = $_GET['page'];
-            }
-            else
-            {
-                $page = 'home';
-            }
+            $page = (empty($_GET['page']) ? 'home' : $_GET['page']);
 
-            $path = './App/'.$page.'.php';
+            $path = './App/Views/'.$page.'.php';
 
             if (is_file($path)) {
                 require $path;
             }
-            
+            else
+            {
+                require './App/Views/404.php';
+            }
         ?>
     </main>
     <footer>

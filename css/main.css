@@ -26,11 +26,8 @@ footer {
     bottom: 15px;
 }
 h1 {
-	font-size: 22px;
-}
-main {
-    margin-top: 30vh;
-	transform: translateY(-30%);
+    margin: 0;
+    padding: 0;
 }
 #btn-dark {
     border: 2px solid var(--light);
@@ -42,6 +39,36 @@ main {
     background: var(--light);
     color: var(--light);
 }
+#title {
+    position: fixed;
+    width: 100vw;
+    top: 70px;
+    left: 0;
+}
+.big-logo {
+    margin-top: 30vh;
+    transform: translateY(-30%);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+}
+.big-title {
+	font-size: 20px;
+    margin: 0;
+}
+.small-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+}
+.small-title {
+    position: fixed;
+    top: 20px;
+    left: 90px;
+    font-size: 40px;
+}
 .theme-dark {
     background: var(--dark);
     color: var(--light);
@@ -50,25 +77,25 @@ main {
     background: var(--light);
     color: var(--dark);
 }
-.logo {
-    width: 100px;
-    height: 100px;
-}
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 30px;
-    }
-    .logo {
+    .big-logo {
         width: 125px;
         height: 125px;
+        margin-bottom: 0;
+    }
+    .big-title {
+        font-size: 30px;
+        margin: 0;
     }
 }
 @media screen and (min-width: 1024px) {
-    h1 {
-        font-size: 50px;
+    .big-logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 0;
     }
-    .logo {
-        width: 150px;
-        height: 150px;
+    .big-title {
+        font-size: 50px;
+        margin: 0;
     }
 }
