@@ -18,22 +18,30 @@
 </head>
 <body id="theme" class="theme-dark">
     <header>
-        <a href="/"><img src="img/aum_white.png" alt="" id="logo" class="small-logo"></a>
-        <h1 class="small-title">rondeau-cameira.fr</h1>
-        <hr id="title">
-    </header>
-    <main>
         <?php
             $page = (empty($_GET['page']) ? 'home' : $_GET['page']);
 
-            $path = './App/Views/'.$page.'.php';
+            $headerPath = './App/Views/header-'.$page.'.php';
+
+            if (is_file($headerPath)) {
+                require $headerPath;
+            }
+            else
+            {
+                require './App/Views/header-home.php';
+            }
+        ?>
+    </header>
+    <main>
+        <?php
+            $path = './App/Views/main-'.$page.'.php';
 
             if (is_file($path)) {
                 require $path;
             }
             else
             {
-                require './App/Views/404.php';
+                require './App/Views/main-404.php';
             }
         ?>
     </main>

@@ -35,6 +35,17 @@ main {
     top: 100px;
     left: 50px;
 }
+ul li {
+    text-align: left;
+    font-size: 20px;
+}
+ul li a, ul li a:visited {
+    color: var(--light);
+    text-decoration: none;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
 #btn-dark {
     border: 2px solid var(--light);
     background: var(--dark);
@@ -77,11 +88,15 @@ main {
     left: 90px;
     font-size: 40px;
 }
-.theme-dark {
+.theme-dark,
+.theme-dark ul li a,
+.theme-light ul li a:visited {
     background: var(--dark);
     color: var(--light);
 }
-.theme-light {
+.theme-light,
+.theme-light ul li a,
+.theme-light ul li a:visited {
     background: var(--light);
     color: var(--dark);
 }
