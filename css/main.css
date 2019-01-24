@@ -31,19 +31,19 @@ h1 {
 }
 main {
     position: fixed;
-    top: 100px;
-    left: 50px;
+    top: 96px;
+    left: 20px;
 }
 ul {
     list-style: none;
 }
 ul li {
     text-align: left;
-    font-size: 20px;
 }
 ul li a, ul li a:visited {
     color: var(--light);
     text-decoration: none;
+    font-size: 16px;
 }
 ul li a:hover {
     text-decoration: underline;
@@ -58,10 +58,10 @@ ul li a:hover {
     background: var(--light);
     color: var(--light);
 }
-#title {
+#title-bar {
     position: fixed;
     width: 100%;
-    top: 66px;
+    top: 58px;
     left: 0;
     margin-left: 90px;
     margin-right: 20px;
@@ -88,7 +88,7 @@ ul li a:hover {
     position: fixed;
     top: 20px;
     left: 90px;
-    font-size: 40px;
+    font-size: 24px;
 }
 .theme-dark,
 .theme-dark ul li a,
@@ -103,6 +103,12 @@ ul li a:hover {
     color: var(--dark);
 }
 @media screen and (min-width: 768px) {
+    ul li a, ul li a:visited {
+        font-size: 18px;
+    }
+    #title-bar {
+        top: 60px;
+    }
     .big-logo {
         width: 125px;
         height: 125px;
@@ -112,8 +118,23 @@ ul li a:hover {
         font-size: 30px;
         margin: 0;
     }
+    .small-title {
+        /*position: fixed;
+        top: 20px;
+        left: 90px;*/
+        font-size: 30px;
+    }
 }
 @media screen and (min-width: 1024px) {
+    main {
+        left: 20px;
+    }
+    ul li a, ul li a:visited {
+        font-size: 22px;
+    }
+    #title-bar {
+        top: 64px;
+    }
     .big-logo {
         width: 200px;
         height: 200px;
@@ -122,5 +143,11 @@ ul li a:hover {
     .big-title {
         font-size: 50px;
         margin: 0;
+    }
+    .small-title {
+        /*position: fixed;
+        top: 20px;
+        left: 90px;*/
+        font-size: 40px;
     }
 }
