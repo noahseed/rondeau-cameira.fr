@@ -35,6 +35,9 @@ main {
     top: 100px;
     left: 50px;
 }
+ul {
+    list-style: none;
+}
 ul li {
     text-align: left;
     font-size: 20px;

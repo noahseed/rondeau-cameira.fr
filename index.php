@@ -28,7 +28,7 @@
             }
             else
             {
-                require './App/Views/header-home.php';
+                require './App/Views/header-site.php';
             }
         ?>
     </header>
