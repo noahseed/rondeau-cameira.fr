@@ -1,6 +1,6 @@
 :root {
     --blue: #3c3d76;
-    --dark: #111111;
+    --dark: #000000;
     --light: #eeeeee;
     /*
     --dblue: #5c5d96cc;
@@ -10,6 +10,14 @@
 }
 * {
     box-sizing: border-box;
+}
+a, a:visited {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover {
+    text-decoration: underline;
 }
 body {
     margin: auto;
@@ -29,24 +37,23 @@ h1 {
     margin: 0;
     padding: 0;
 }
+h2 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 26px;
+}
 main {
     position: fixed;
     top: 96px;
     left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 ul {
     list-style: none;
 }
 ul li {
     text-align: left;
-}
-ul li a, ul li a:visited {
-    color: var(--light);
-    text-decoration: none;
-    font-size: 16px;
-}
-ul li a:hover {
-    text-decoration: underline;
 }
 #btn-dark {
     border: 2px solid var(--light);
