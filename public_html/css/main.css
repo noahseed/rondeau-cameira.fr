@@ -69,6 +69,25 @@ main {
 nav {
     grid-area: n;
     text-align: left;
+main {
+    grid-area: m;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+nav {
+    grid-area: n;
+    text-align: left;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 26px;
+}
+main {
+    position: fixed;
+    top: 96px;
+    left: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 ul {
     list-style: none;
