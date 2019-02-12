@@ -4,7 +4,6 @@
 --
 -- Client :  localhost
 -- Généré le :  Dim 10 Février 2019 à 11:04
--- Généré le :  Sam 09 Février 2019 à 20:55
 -- Version du serveur :  10.0.38-MariaDB-0+deb8u1
 -- Version de PHP :  7.0.33-1~dotdeb+8.1
 
@@ -30,10 +29,6 @@ USE `rondeau-cameira`;
 --
 
 CREATE TABLE IF NOT EXISTS `musics` (
--- Structure de la table `music`
---
-
-CREATE TABLE IF NOT EXISTS `music` (
 `music_id` int(11) NOT NULL,
   `music_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `music_title` varchar(255) NOT NULL,
@@ -45,10 +40,6 @@ CREATE TABLE IF NOT EXISTS `music` (
 --
 
 INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VALUES
--- Contenu de la table `music`
---
-
-INSERT INTO `music` (`music_id`, `music_date`, `music_title`, `music_slug`) VALUES
 (1, '2018-03-18 20:58:32', 'Hilight Tribe - Free tibet', 'I3rlh18G11E'),
 (2, '2018-03-18 20:58:48', 'Hilight Tribe - Temple Of Light [Full Album]', 'qe7hgTzdKyo'),
 (3, '2018-03-18 21:00:15', 'Twenty Øne Piløts - Fairly Local', 'HDI9inno86U'),
@@ -333,9 +324,6 @@ INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, 
 -- Index pour la table `musics`
 --
 ALTER TABLE `musics`
--- Index pour la table `music`
---
-ALTER TABLE `music`
  ADD PRIMARY KEY (`music_id`), ADD KEY `title` (`music_title`);
 
 --
@@ -343,7 +331,6 @@ ALTER TABLE `music`
 --
 ALTER TABLE `sites`
  ADD PRIMARY KEY (`site_id`), ADD KEY `category_id` (`category_id`);
- ADD PRIMARY KEY (`site_id`), ADD UNIQUE KEY `site_name` (`site_name`);
 
 --
 -- Index pour la table `sites_categories`

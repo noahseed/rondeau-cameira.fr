@@ -45,6 +45,7 @@
         ?>
     </main>
     <footer>
+        <hr>
         <button id="btn-dark" onclick="vCss()" disabled="disabled"></button>
         <button id="btn-light" onclick="vCss()"></button>
     </footer>

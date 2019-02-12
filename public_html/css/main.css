@@ -2,11 +2,9 @@
     --blue: #3c3d76;
     --dark: #000000;
     --light: #eeeeee;
-    /*
     --dblue: #5c5d96cc;
     --lightblue: #3c3d76;
     --lightblue-mid: #3c3d7633;
-    */
 }
 * {
     box-sizing: border-box;
@@ -25,7 +23,6 @@ body {
     min-width: 100vw;
     display: grid;
     grid-template-areas: "h" "n" "m" "f";
-    grid-template-columns: 1fr;
     grid-template-rows: 64px 1fr 1fr 64px;
     text-align: center;
 }
@@ -33,9 +30,7 @@ button {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    /*margin-top: 5px;*/
     margin-left: 10px;
-    /*margin-bottom: 5px;*/
 }
 footer {
     grid-area: f;
@@ -64,30 +59,13 @@ main {
     grid-area: m;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
     text-align: left;
 }
 nav {
     grid-area: n;
     text-align: left;
-main {
-    grid-area: m;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: left;
-}
-nav {
-    grid-area: n;
-    text-align: left;
-    text-align: left;
-    margin-left: 30px;
-    font-size: 26px;
-}
-main {
-    position: fixed;
-    top: 96px;
-    left: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 20px;
 }
 ul {
     list-style: none;
@@ -177,9 +155,6 @@ ul li {
         grid-template-areas: "h h" "n m" "f f";
         grid-template-columns: 350px 1fr;
         grid-template-rows: 64px 1fr 64px;
-    }
-    main {
-        left: 20px;
     }
     ul li a, ul li a:visited {
         font-size: 22px;
