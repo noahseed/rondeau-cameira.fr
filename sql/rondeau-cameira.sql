@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Dim 10 Février 2019 à 11:04
+-- Généré le :  Mer 13 Février 2019 à 19:35
 -- Version du serveur :  10.0.38-MariaDB-0+deb8u1
 -- Version de PHP :  7.0.33-1~dotdeb+8.1
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `musics` (
   `music_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `music_title` varchar(255) NOT NULL,
   `music_slug` varchar(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=193 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=197 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `musics`
@@ -51,7 +51,7 @@ INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VAL
 (9, '2018-03-18 21:12:25', 'Twenty Øne Piløts - Heathens (TOPxMM)', 'qNk-xjCISYQ'),
 (10, '2018-03-18 21:13:39', 'Twenty Øne Piløts - Lane Boy (TOPxMM)', 'oRb0C1rMCH0'),
 (11, '2018-03-18 21:17:20', 'Twenty Øne Piløts - Ride (TOPxMM)', 'fo4p5GJDk_g'),
-(12, '2018-03-18 21:34:55', 'David Bowie - Space Oddity', 'cYMCLz5PQVw'),
+(12, '2018-03-18 21:34:55', 'David Bowie - Space Oddity', 'iYYRH4apXDo'),
 (13, '2018-03-18 21:37:22', 'Peter Kingsbery - Only the very best', 'doU4u9eJ3z0'),
 (14, '2018-03-18 21:38:24', 'Cyndi Lauper - The world is stone', 'vKm9Xrf6Eno'),
 (15, '2018-03-18 21:39:23', 'Amy Winehouse - Back To Black', 'TJAfLE39ZZ8'),
@@ -227,11 +227,15 @@ INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VAL
 (185, '2018-05-10 08:02:12', 'Dadju - Bob Marley', 'hQU_pgyCL6k'),
 (186, '2018-05-10 08:18:15', 'OrelSan - Tout va bien', 'dq6G2YWoRqA'),
 (187, '2018-05-10 08:24:01', 'Vitaa & Claudio Capéo - Un peu de rêve', 'CfVMIcP1FdY'),
-(188, '2018-07-14 14:40:53', 'ॐ GayaTree ॐ Ambient, Psybient Mix', 'EFSrMwp3ydM'),
+(188, '2018-07-14 14:40:53', 'GayaTree ॐ Ambient, Psybient Mix', 'EFSrMwp3ydM'),
 (189, '2019-02-08 11:02:23', 'Os Tincoãs - Deixa A Gira Girar (j g b edit)', '3xt8Mp8oWzc'),
 (190, '2019-02-08 11:07:52', 'Christine and The Queens - Christine', 'rs40yxHjTxQ'),
 (191, '2019-02-08 11:08:53', 'N''to - Alter Ego', 'g3y6MEcOX7o'),
-(192, '2019-02-08 11:10:19', 'Unders – Syria', 'G5TBWxjnaIE');
+(192, '2019-02-08 11:10:19', 'Unders – Syria', 'G5TBWxjnaIE'),
+(193, '2019-02-12 15:03:49', 'Nâdiya - Amies-ennemies', '9jpiPXwcr0c'),
+(194, '2019-02-12 15:42:33', 'Cappella - U Got 2 Let The Music', 'y3KihWJRh6U'),
+(195, '2019-02-12 16:07:23', '2 Unlimited - No Limit', 'RkEXGgdqMz8'),
+(196, '2019-02-12 16:41:45', 'Marwa Loud - Fallait pas', '5UV1aEkBgAk');
 
 -- --------------------------------------------------------
 
@@ -251,20 +255,20 @@ CREATE TABLE IF NOT EXISTS `sites` (
 --
 
 INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
-(1, 'pacepertutti.com', 'pacepertutti.com', 1),
-(2, 'paixpourtous.com', 'paixpourtous.com', 1),
-(3, 'pazparatodos.com', 'pazparatodos.com', 1),
-(4, 'peace4everyone.info', 'peace4everyone.info', 1),
-(5, 'admin.rondeau-cameira.fr', 'admin.rondeau-cameira.fr', 2),
-(6, 'dev.rondeau-cameira.fr', 'dev.rondeau-cameira.fr', 2),
-(7, 'iso.rondeau-cameira.fr', 'iso.rondeau-cameira.fr', 2),
-(8, 'links.rondeau-cameira.fr', 'links.rondeau-cameira.fr', 2),
-(9, 'mariadb.rondeau-cameira.fr', 'mariadb.rondeau-cameira.fr', 2),
-(10, 'music.rondeau-cameira.fr', 'music.rondeau-cameira.fr', 2),
-(11, 'rondeau-cameira.fr', 'rondeau-cameira.fr', 2),
-(12, 'sebastien.rondeau-cameira.fr', 'sebastien.rondeau-cameira.fr', 2),
-(13, 'templates.rondeau-cameira.fr', 'templates.rondeau-cameira.fr', 2),
-(14, 'spiritualite-quantique.fr', 'spiritualite-quantique.fr', 3);
+(1, 'Pace per Tutti', 'pacepertutti.com', 1),
+(2, 'Paix pour Tous', 'paixpourtous.com', 1),
+(3, 'Paz para Todos', 'pazparatodos.com', 1),
+(4, 'Peace for Everyone', 'peace4everyone.info', 1),
+(5, 'rondeau-cameira.fr', 'rondeau-cameira.fr', 2),
+(6, 'rondeau-cameira.fr_admin', 'admin.rondeau-cameira.fr', 2),
+(7, 'rondeau-cameira.fr_dev', 'dev.rondeau-cameira.fr', 2),
+(8, 'rondeau-cameira.fr_iso', 'iso.rondeau-cameira.fr', 2),
+(9, 'rondeau-cameira.fr_links', 'links.rondeau-cameira.fr', 2),
+(10, 'rondeau-cameira.fr_mariadb', 'mariadb.rondeau-cameira.fr', 2),
+(11, 'rondeau-cameira.fr_templates', 'templates.rondeau-cameira.fr', 2),
+(12, 'Mes musiques préférées', 'music.rondeau-cameira.fr', 3),
+(13, 'Site Web de Sébastien', 'sebastien.rondeau-cameira.fr', 3),
+(14, 'spiritualite-quantique.fr', 'spiritualite-quantique.fr', 4);
 
 -- --------------------------------------------------------
 
@@ -275,16 +279,17 @@ INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
 CREATE TABLE IF NOT EXISTS `sites_categories` (
 `category_id` int(11) NOT NULL,
   `category_name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `sites_categories`
 --
 
 INSERT INTO `sites_categories` (`category_id`, `category_name`) VALUES
-(1, 'paixpourtous.com'),
-(2, 'rondeau-cameira.fr'),
-(3, 'spiritualite-quantique.fr');
+(1, 'Paix pour Tous'),
+(2, 'Rondeau Cameira'),
+(3, 'Sébastien'),
+(4, 'Spiritualité Quantique');
 
 -- --------------------------------------------------------
 
@@ -299,22 +304,20 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_password` varchar(255) NOT NULL,
   `user_confirmation_token` varchar(60) DEFAULT NULL,
   `user_confirmed_at` datetime DEFAULT NULL,
-  `reset_token` varchar(60) DEFAULT NULL,
-  `reset_at` datetime DEFAULT NULL,
+  `user_reset_token` varchar(60) DEFAULT NULL,
+  `user_reset_at` datetime DEFAULT NULL,
   `user_remember_token` varchar(250) DEFAULT NULL,
   `user_is_admin` tinyint(1) DEFAULT NULL,
   `user_is_vip` tinyint(1) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, `user_confirmation_token`, `user_confirmed_at`, `reset_token`, `reset_at`, `user_remember_token`, `user_is_admin`, `user_is_vip`) VALUES
+INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, `user_confirmation_token`, `user_confirmed_at`, `user_reset_token`, `user_reset_at`, `user_remember_token`, `user_is_admin`, `user_is_vip`) VALUES
 (1, 'sebastien', 'sebastien@rondeau-cameira.fr', '$2y$10$r2bz/.Y0Igt1T0RKlqmkQO/MnQv0BSdOyc.eB2lkwyW1SmP5P6pvC', NULL, '2018-03-13 05:53:57', NULL, NULL, 'YfwsMT3H3bKyuohSp098kZ19nMA09QtRgKLSwA7jFn1dSSRgAMLZsUio9953CLVhkxlSlRoAzphv5RzeRgLl78GCOiDHgssBjKJjqwT21Xjo6IxEfCbwTegK8ntRkd1vymice9ExxOQGO43j6YP4sEZJiSHmFps8YY8UhTuD3nNWJscmahKBIWwNM1tJc4f5jPC7bA7ZcSIaliyI6oP10pW72ud0R6wEt1N8SlmA3mfK7gRCW8ruvcQZXq', 1, 1),
-(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'qG3qkbzUqeSKi8QkOe4Q4NeaHKZ1tgVxiSzKMWkjuNyW0mn1ln0WIY5WOdwAE6IwaTFhuZCZYxnyhY6p51FEktZCpefTMtp7rcoSCutqqh3KNyvd3ayUmrFVK2O6NeohKlprdzHb8FhD2yCRC14jJQwx97h5BccGnj7HnP4nqAkIKgR4BfVPKGFc2Mum6JAmUU12SlJx85e0r4YMjoJhbBPgEyJhelzAshhFOBNip0mQMwFRFCaWzIYT3E', 1, 1),
-(3, 'aljoce', 'cameiraalice@hotmail.fr', '$2y$10$r2bz/.Y0Igt1T0RKlqmkQO/MnQv0BSdOyc.eB2lkwyW1SmP5P6pvC', NULL, '2018-03-18 13:27:36', NULL, NULL, 'fyGomw8KlteDj4CupB2eDa5oSdrVQl9HE1AWiSDFEar293lb4mGEQd4vAbWdtHv2v0tY7Ff9qxtnZpRpoOa3E0SqjwZkPGEflpHD47mtFIyqjq9rTT8kG9Bz0qfOwT2LdU5wICXjhyyU6j1dsyQjFh0Bh8ZQVAZeywbWuASVgZhnAEwbEsRnGTUoku1UTVWd4DRSlASOECR25iEpwQlcx2ZAwDLDy9tSTNuuneUM2rgfIM7G7QT2vhnVcM', NULL, NULL),
-(4, 'nezarus', 'rgeulpk@gmail.com', '$2y$10$lZUovTBZMhXD4LAdYDi9EuJhGmo.oFiBgqDYg07DWDrb6/QwLP3ym', NULL, '2018-03-20 21:27:51', NULL, NULL, 'eZS9KypirX1xLp5pj4ixt4oO6Nxsv3ujiTtJKTBg4y0oYRIHjGSsKlzBkm76eaB9J6lW6XkLwMQ6GDfAofnoBafPJPdp6ryLr1vYnacEwo1KnHZKWu3tALnadPH9VDE8hDzZxotPkii3Qv452azWAeLqWS2rHqNb2oYLLclOSHxtGaKAc8gSAxE2BiJcdmvDYtnxxynJjlscD6TuxjEALEDhiL95YJhxvUbxJCRLSI1WDbzVhh5dIic4Bi', NULL, NULL);
+(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'UGs7Evc1tgFQGu8vm1FpNxLW0eGG9Rmy1ELnB29QKLqkDenfCho8Tu4unqT3VAZ0GcaEHlJVYdrZsABqHDJK5ivozOlxbpElbEbKvqCuM9zvjHCIz4ieZoWdDo5mIiCVgAoJuVHXf0dxMkwBPgVhP3CJfQ9vB3MteCNPunUvhDMESCqu9SJtreIs2RVxoXLS35UCqJKXXIm2ol0GsW1xXBIwy3wwW0TY4KuSwI96OUWxqRDzhHwRdaqRdV', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -324,7 +327,7 @@ INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, 
 -- Index pour la table `musics`
 --
 ALTER TABLE `musics`
- ADD PRIMARY KEY (`music_id`), ADD KEY `title` (`music_title`);
+ ADD PRIMARY KEY (`music_id`), ADD UNIQUE KEY `music_slug` (`music_slug`);
 
 --
 -- Index pour la table `sites`
@@ -352,7 +355,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `musics`
 --
 ALTER TABLE `musics`
-MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=193;
+MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=197;
 --
 -- AUTO_INCREMENT pour la table `sites`
 --
@@ -362,12 +365,12 @@ MODIFY `site_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
 -- AUTO_INCREMENT pour la table `sites_categories`
 --
 ALTER TABLE `sites_categories`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- Contraintes pour les tables exportées
 --
