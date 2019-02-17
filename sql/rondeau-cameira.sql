@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 13 Février 2019 à 19:35
+-- Généré le :  Sam 16 Février 2019 à 13:07
 -- Version du serveur :  10.0.38-MariaDB-0+deb8u1
 -- Version de PHP :  7.0.33-1~dotdeb+8.1
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `musics` (
   `music_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `music_title` varchar(255) NOT NULL,
   `music_slug` varchar(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=197 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `musics`
@@ -235,7 +235,11 @@ INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VAL
 (193, '2019-02-12 15:03:49', 'Nâdiya - Amies-ennemies', '9jpiPXwcr0c'),
 (194, '2019-02-12 15:42:33', 'Cappella - U Got 2 Let The Music', 'y3KihWJRh6U'),
 (195, '2019-02-12 16:07:23', '2 Unlimited - No Limit', 'RkEXGgdqMz8'),
-(196, '2019-02-12 16:41:45', 'Marwa Loud - Fallait pas', '5UV1aEkBgAk');
+(196, '2019-02-12 16:41:45', 'Marwa Loud - Fallait pas', '5UV1aEkBgAk'),
+(197, '2019-02-14 08:55:43', 'Vienna Scientists I - A Selection Into Dub Funk Trip Hop Drum''N''Bass', '2dDcxmnqrvc'),
+(198, '2019-02-15 14:51:27', 'Depeche Mode - Useless ''17', '9BP08E4Uzyk'),
+(199, '2019-02-15 15:40:55', 'Boozoo Bajou - Satta', '8r67q9uPk8E'),
+(200, '2019-02-15 19:21:17', 'Morcheeba - Big Calm', 'qJQHjy9p_rk');
 
 -- --------------------------------------------------------
 
@@ -317,7 +321,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, `user_confirmation_token`, `user_confirmed_at`, `user_reset_token`, `user_reset_at`, `user_remember_token`, `user_is_admin`, `user_is_vip`) VALUES
 (1, 'sebastien', 'sebastien@rondeau-cameira.fr', '$2y$10$r2bz/.Y0Igt1T0RKlqmkQO/MnQv0BSdOyc.eB2lkwyW1SmP5P6pvC', NULL, '2018-03-13 05:53:57', NULL, NULL, 'YfwsMT3H3bKyuohSp098kZ19nMA09QtRgKLSwA7jFn1dSSRgAMLZsUio9953CLVhkxlSlRoAzphv5RzeRgLl78GCOiDHgssBjKJjqwT21Xjo6IxEfCbwTegK8ntRkd1vymice9ExxOQGO43j6YP4sEZJiSHmFps8YY8UhTuD3nNWJscmahKBIWwNM1tJc4f5jPC7bA7ZcSIaliyI6oP10pW72ud0R6wEt1N8SlmA3mfK7gRCW8ruvcQZXq', 1, 1),
-(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'UGs7Evc1tgFQGu8vm1FpNxLW0eGG9Rmy1ELnB29QKLqkDenfCho8Tu4unqT3VAZ0GcaEHlJVYdrZsABqHDJK5ivozOlxbpElbEbKvqCuM9zvjHCIz4ieZoWdDo5mIiCVgAoJuVHXf0dxMkwBPgVhP3CJfQ9vB3MteCNPunUvhDMESCqu9SJtreIs2RVxoXLS35UCqJKXXIm2ol0GsW1xXBIwy3wwW0TY4KuSwI96OUWxqRDzhHwRdaqRdV', 1, 1);
+(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'F7WQxVhlNfDYQlbAbkEPbaVrK66n7qEyxqExdGHHsihu0hjxiX6OpKwNZLIk6iM65ToM4zY3GfkiCpcUpYmCSCkVk0FzDKNriSNNStJeBY4Rm8Htf1FJmJ5hXaDqBHgS8njuqcjwcFk3tiOLU2EKrVcfn0RR6Bidvwgmj1ZAcqNF9ZsIM643V10CWwFnpsHoWuuXQtunOEIDhdeAXUG1C3sYxEF3VHpU85li3iqv06EyeI6JBTGnRj1Q6P', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -355,7 +359,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `musics`
 --
 ALTER TABLE `musics`
-MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=197;
+MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=201;
 --
 -- AUTO_INCREMENT pour la table `sites`
 --
