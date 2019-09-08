@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.12deb2+deb8u4
+-- version 4.2.12deb2+deb8u6
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Sam 16 Février 2019 à 13:07
+-- Généré le :  Dim 08 Septembre 2019 à 11:25
 -- Version du serveur :  10.0.38-MariaDB-0+deb8u1
 -- Version de PHP :  7.0.33-1~dotdeb+8.1
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `rondeau-cameira`
 --
-CREATE DATABASE IF NOT EXISTS `rondeau-cameira` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `rondeau-cameira`;
 
 -- --------------------------------------------------------
 
@@ -33,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `musics` (
   `music_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `music_title` varchar(255) NOT NULL,
   `music_slug` varchar(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=230 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `musics`
@@ -239,7 +237,36 @@ INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VAL
 (197, '2019-02-14 08:55:43', 'Vienna Scientists I - A Selection Into Dub Funk Trip Hop Drum''N''Bass', '2dDcxmnqrvc'),
 (198, '2019-02-15 14:51:27', 'Depeche Mode - Useless ''17', '9BP08E4Uzyk'),
 (199, '2019-02-15 15:40:55', 'Boozoo Bajou - Satta', '8r67q9uPk8E'),
-(200, '2019-02-15 19:21:17', 'Morcheeba - Big Calm', 'qJQHjy9p_rk');
+(200, '2019-02-15 19:21:17', 'Morcheeba - Big Calm', 'qJQHjy9p_rk'),
+(201, '2019-02-16 19:16:47', 'Medicinal Vibes [Dub / Psydub / Psybient Music Mix]', '4TexhCt8luw'),
+(202, '2019-02-17 11:15:15', 'Depeche Mode - Personal Jesus', 'u1xrNaTO1bI'),
+(203, '2019-02-17 17:14:17', 'Lucas presents - Confessions of a SuperModule', 'uAxtPztdjbk'),
+(204, '2019-02-17 17:17:37', 'Captain Hollywood Project - More and More', 'V-rS174AUT0'),
+(205, '2019-02-17 17:19:50', 'Da Hool - Meet her at the Loveparade', 'KO4y3nkJXDA'),
+(206, '2019-02-17 17:22:35', 'Black Box - Ride on Time', 'M0quXl_od3g'),
+(207, '2019-02-18 08:24:42', 'Buena Vista Social Club - Chan Chan', 'KODWcrncnUU'),
+(208, '2019-02-20 09:34:28', 'Wipe Out All the Negative Energy(417Hz)', 'I_FpVaV1pHc'),
+(209, '2019-02-21 10:52:59', 'Tosca - The Lounge Dub', 'qeh7hsSw2IQ'),
+(210, '2019-02-21 11:17:49', 'Tosca - Opera', 'HV7OYwjKI2c'),
+(211, '2019-02-21 11:26:56', 'Tosca - J.A.C.', 'hoN763DxG2U'),
+(212, '2019-02-21 11:44:34', 'Tosca - Souvenirs', 'izVn4L8XYCE'),
+(213, '2019-02-21 11:45:35', 'Tosca - Boom Boom Boom', '_2bDFZi_j9Q'),
+(214, '2019-02-21 11:46:21', 'Tosca - No Hassle Studio', '8r5DBh3VKQM'),
+(215, '2019-02-22 19:25:50', 'Bob Marley feat Lauryn Hill - Turn your lights down low', 'VitKvID-uvY'),
+(216, '2019-02-22 19:29:22', 'Crystal Waters - Gypsy Woman', '_KztNIg4cvE'),
+(217, '2019-02-25 15:58:05', 'Astrix @ Boom Festival 2018', 'fBT0Gm6kYUE'),
+(218, '2019-03-14 17:41:26', 'Twenty One Pilots - Chlorine', 'eJnQBXmZ7Ek'),
+(219, '2019-05-25 07:28:24', 'Anitta & Kevinho - Terremoto', 'O65FBF9RamQ'),
+(220, '2019-05-25 07:40:26', 'NENNY x i.M - SUSHI', 'j-3LjMES1sI'),
+(221, '2019-05-25 11:11:18', 'Ludmilla - Din Din Din feat. Mc Pupio & Mc Doguinha', 'FrJJlbHlxsI'),
+(222, '2019-05-25 11:17:20', 'Ludmilla - Din Din Din feat. Mc Pupio & Mc Doguinha (Studio)', '1KrwaU4Yyns'),
+(223, '2019-05-25 12:37:29', 'Ludmilla - Din Din Din', 'LJjms_RVCWs'),
+(224, '2019-06-26 15:29:33', 'Twenty One Pilots - Løcatiøn Sessiøns: Chlorine', 'OveNvD2i-WY'),
+(225, '2019-06-28 21:55:01', 'Depeche Mode - Useless (CJ Bolland Ultrasonar Extended Mix)', 'SQ9CR9cqZsY'),
+(226, '2019-06-29 16:21:20', 'Wet Bed Gang - Devia ir', 'E_i0iVloA18'),
+(227, '2019-06-29 16:22:15', 'Wet Bed Gang - Bairro', 'cjAycO5KYDE'),
+(228, '2019-06-29 21:12:41', 'Om Mantra Meditation 10 heures - Musique de sommeil', '-gOFVB_dKNs'),
+(229, '2019-07-01 20:58:38', 'The Weeknd - Call Out My Name', 'M4ZoCHID9GI');
 
 -- --------------------------------------------------------
 
@@ -252,7 +279,7 @@ CREATE TABLE IF NOT EXISTS `sites` (
   `site_name` varchar(255) NOT NULL,
   `site_url` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `sites`
@@ -265,14 +292,15 @@ INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
 (4, 'Peace for Everyone', 'peace4everyone.info', 1),
 (5, 'rondeau-cameira.fr', 'rondeau-cameira.fr', 2),
 (6, 'rondeau-cameira.fr_admin', 'admin.rondeau-cameira.fr', 2),
-(7, 'rondeau-cameira.fr_dev', 'dev.rondeau-cameira.fr', 2),
-(8, 'rondeau-cameira.fr_iso', 'iso.rondeau-cameira.fr', 2),
-(9, 'rondeau-cameira.fr_links', 'links.rondeau-cameira.fr', 2),
-(10, 'rondeau-cameira.fr_mariadb', 'mariadb.rondeau-cameira.fr', 2),
-(11, 'rondeau-cameira.fr_templates', 'templates.rondeau-cameira.fr', 2),
-(12, 'Mes musiques préférées', 'music.rondeau-cameira.fr', 3),
-(13, 'Site Web de Sébastien', 'sebastien.rondeau-cameira.fr', 3),
-(14, 'spiritualite-quantique.fr', 'spiritualite-quantique.fr', 4);
+(7, 'rondeau-cameira.fr_iso', 'iso.rondeau-cameira.fr', 2),
+(8, 'rondeau-cameira.fr_links', 'links.rondeau-cameira.fr', 2),
+(9, 'rondeau-cameira.fr_templates', 'templates.rondeau-cameira.fr', 2),
+(10, 'Mes musiques préférées', 'music.rondeau-cameira.fr', 3),
+(11, 'Site Web de Sébastien', 'sebastien.rondeau-cameira.fr', 3),
+(12, 'spiritualite-quantique.fr', 'spiritualite-quantique.fr', 4),
+(13, 'Namasté Academy', 'namaste.academy', 5),
+(14, 'Aljoce', 'aljoce.com', 6),
+(16, 'Aljoce Shop', 'shop.aljoce.com', 6);
 
 -- --------------------------------------------------------
 
@@ -283,13 +311,15 @@ INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
 CREATE TABLE IF NOT EXISTS `sites_categories` (
 `category_id` int(11) NOT NULL,
   `category_name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `sites_categories`
 --
 
 INSERT INTO `sites_categories` (`category_id`, `category_name`) VALUES
+(6, 'Aljoce'),
+(5, 'Namasté'),
 (1, 'Paix pour Tous'),
 (2, 'Rondeau Cameira'),
 (3, 'Sébastien'),
@@ -321,7 +351,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, `user_confirmation_token`, `user_confirmed_at`, `user_reset_token`, `user_reset_at`, `user_remember_token`, `user_is_admin`, `user_is_vip`) VALUES
 (1, 'sebastien', 'sebastien@rondeau-cameira.fr', '$2y$10$r2bz/.Y0Igt1T0RKlqmkQO/MnQv0BSdOyc.eB2lkwyW1SmP5P6pvC', NULL, '2018-03-13 05:53:57', NULL, NULL, 'YfwsMT3H3bKyuohSp098kZ19nMA09QtRgKLSwA7jFn1dSSRgAMLZsUio9953CLVhkxlSlRoAzphv5RzeRgLl78GCOiDHgssBjKJjqwT21Xjo6IxEfCbwTegK8ntRkd1vymice9ExxOQGO43j6YP4sEZJiSHmFps8YY8UhTuD3nNWJscmahKBIWwNM1tJc4f5jPC7bA7ZcSIaliyI6oP10pW72ud0R6wEt1N8SlmA3mfK7gRCW8ruvcQZXq', 1, 1),
-(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'F7WQxVhlNfDYQlbAbkEPbaVrK66n7qEyxqExdGHHsihu0hjxiX6OpKwNZLIk6iM65ToM4zY3GfkiCpcUpYmCSCkVk0FzDKNriSNNStJeBY4Rm8Htf1FJmJ5hXaDqBHgS8njuqcjwcFk3tiOLU2EKrVcfn0RR6Bidvwgmj1ZAcqNF9ZsIM643V10CWwFnpsHoWuuXQtunOEIDhdeAXUG1C3sYxEF3VHpU85li3iqv06EyeI6JBTGnRj1Q6P', 1, 1);
+(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'mEaArR04EfOKvGLDRCD50oaAMjxUPiSVOhERKtb3Hgq5ZFKNyP1SB8vzBmwS9BcH0iMfO2FfhPtC9jKHBgwPRufccmKtzl80hrfvjemEj7z5VRldD8RuGSimpupc3AanNIi1Oiq35sREonSVvBjiwuQe8FahWQkdphaokSNyXqY2IHRbLzY05u9qXLQuEDC0xjpEIU7UXUC6ZhoIrRyYu9pEhgE7fe8lGI4rlnEZAbyDRDT1iDcQTmN75r', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -359,17 +389,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `musics`
 --
 ALTER TABLE `musics`
-MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=201;
+MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=230;
 --
 -- AUTO_INCREMENT pour la table `sites`
 --
 ALTER TABLE `sites`
-MODIFY `site_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+MODIFY `site_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT pour la table `sites_categories`
 --
 ALTER TABLE `sites_categories`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
