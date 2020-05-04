@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.12deb2+deb8u6
+-- version 4.2.12deb2+deb8u9
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Dim 08 Septembre 2019 à 11:25
+-- Généré le :  Lun 04 Mai 2020 à 10:50
 -- Version du serveur :  10.0.38-MariaDB-0+deb8u1
 -- Version de PHP :  7.0.33-1~dotdeb+8.1
 
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `musics` (
   `music_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `music_title` varchar(255) NOT NULL,
   `music_slug` varchar(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=230 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=234 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `musics`
@@ -266,7 +266,11 @@ INSERT INTO `musics` (`music_id`, `music_date`, `music_title`, `music_slug`) VAL
 (226, '2019-06-29 16:21:20', 'Wet Bed Gang - Devia ir', 'E_i0iVloA18'),
 (227, '2019-06-29 16:22:15', 'Wet Bed Gang - Bairro', 'cjAycO5KYDE'),
 (228, '2019-06-29 21:12:41', 'Om Mantra Meditation 10 heures - Musique de sommeil', '-gOFVB_dKNs'),
-(229, '2019-07-01 20:58:38', 'The Weeknd - Call Out My Name', 'M4ZoCHID9GI');
+(229, '2019-07-01 20:58:38', 'The Weeknd - Call Out My Name', 'M4ZoCHID9GI'),
+(230, '2019-09-23 11:58:36', 'Captain Hook @ Ozora Festival 2019', 'ROYLmN465SM'),
+(231, '2019-09-26 08:35:46', 'Ace Ventura @ Ozora Festival 2018', 'oQ1nYcs-HUs'),
+(232, '2019-09-26 11:34:12', 'Ticon vs Animato @ Boom Festival 2018', 'u7wzgchI7-Y'),
+(233, '2020-04-28 12:04:24', 'Kidas - Au fond de moi', 'elTuR7j16YY');
 
 -- --------------------------------------------------------
 
@@ -279,7 +283,7 @@ CREATE TABLE IF NOT EXISTS `sites` (
   `site_name` varchar(255) NOT NULL,
   `site_url` varchar(255) NOT NULL,
   `category_id` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `sites`
@@ -298,9 +302,9 @@ INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
 (10, 'Mes musiques préférées', 'music.rondeau-cameira.fr', 3),
 (11, 'Site Web de Sébastien', 'sebastien.rondeau-cameira.fr', 3),
 (12, 'spiritualite-quantique.fr', 'spiritualite-quantique.fr', 4),
-(13, 'Namasté Academy', 'namaste.academy', 5),
-(14, 'Aljoce', 'aljoce.com', 6),
-(16, 'Aljoce Shop', 'shop.aljoce.com', 6);
+(14, 'Aljoce', 'aljoce.com', 5),
+(16, 'Aljoce Shop', 'shop.aljoce.com', 5),
+(17, 'api.spiritualite-quantique.fr', 'api.spiritualite-quantique.fr', 4);
 
 -- --------------------------------------------------------
 
@@ -311,15 +315,14 @@ INSERT INTO `sites` (`site_id`, `site_name`, `site_url`, `category_id`) VALUES
 CREATE TABLE IF NOT EXISTS `sites_categories` (
 `category_id` int(11) NOT NULL,
   `category_name` varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `sites_categories`
 --
 
 INSERT INTO `sites_categories` (`category_id`, `category_name`) VALUES
-(6, 'Aljoce'),
-(5, 'Namasté'),
+(5, 'Aljoce'),
 (1, 'Paix pour Tous'),
 (2, 'Rondeau Cameira'),
 (3, 'Sébastien'),
@@ -351,7 +354,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`user_id`, `user_username`, `user_email`, `user_password`, `user_confirmation_token`, `user_confirmed_at`, `user_reset_token`, `user_reset_at`, `user_remember_token`, `user_is_admin`, `user_is_vip`) VALUES
 (1, 'sebastien', 'sebastien@rondeau-cameira.fr', '$2y$10$r2bz/.Y0Igt1T0RKlqmkQO/MnQv0BSdOyc.eB2lkwyW1SmP5P6pvC', NULL, '2018-03-13 05:53:57', NULL, NULL, 'YfwsMT3H3bKyuohSp098kZ19nMA09QtRgKLSwA7jFn1dSSRgAMLZsUio9953CLVhkxlSlRoAzphv5RzeRgLl78GCOiDHgssBjKJjqwT21Xjo6IxEfCbwTegK8ntRkd1vymice9ExxOQGO43j6YP4sEZJiSHmFps8YY8UhTuD3nNWJscmahKBIWwNM1tJc4f5jPC7bA7ZcSIaliyI6oP10pW72ud0R6wEt1N8SlmA3mfK7gRCW8ruvcQZXq', 1, 1),
-(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, 'mEaArR04EfOKvGLDRCD50oaAMjxUPiSVOhERKtb3Hgq5ZFKNyP1SB8vzBmwS9BcH0iMfO2FfhPtC9jKHBgwPRufccmKtzl80hrfvjemEj7z5VRldD8RuGSimpupc3AanNIi1Oiq35sREonSVvBjiwuQe8FahWQkdphaokSNyXqY2IHRbLzY05u9qXLQuEDC0xjpEIU7UXUC6ZhoIrRyYu9pEhgE7fe8lGI4rlnEZAbyDRDT1iDcQTmN75r', 1, 1);
+(2, 'noahseed', 'noahseed@hotmail.com', '$2y$10$S41pUWaTXj5fdhqxtj9uXu/O.Fnas1sUPM/7HFDCeYlA5G3mmkUqe', NULL, '2018-03-18 14:13:36', NULL, NULL, '9ORljnZ29f6iwgmFjbYrnaY2YIZaLv7mdfpB5pJxxGwe7H9znuDWyFoYJJG5PT9jqbiHZMacTlLv69bWCstuQEF0AdjigoLpzbBaVDe9bRKOH6aqGe2lzYpITzvizEm4PwPjUtUTluCznD4dl3TnU5CLgamH55p6c0XhbwZSkBxclEQNgxRxzOGgGXAOM4m7Jaf7EqFPVvAn4EhZInoMbiWckinILDaLjr0Wr8K7luzycwuKFrcxlDysOa', 1, 1);
 
 --
 -- Index pour les tables exportées
@@ -389,17 +392,17 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `musics`
 --
 ALTER TABLE `musics`
-MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=230;
+MODIFY `music_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=234;
 --
 -- AUTO_INCREMENT pour la table `sites`
 --
 ALTER TABLE `sites`
-MODIFY `site_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `site_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT pour la table `sites_categories`
 --
 ALTER TABLE `sites_categories`
-MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT pour la table `users`
 --
