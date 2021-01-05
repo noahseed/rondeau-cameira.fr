@@ -13,3 +13,6 @@ RewriteRule ^(.*)$ $1.php
 #Redirection sur erreur 404
 ErrorDocument 403 /?page=403
 ErrorDocument 404 /?page=404
+
+# Redirige vers sebastien
+# Redirect 301 / https://sebastien.rondeau-cameira.fr/
