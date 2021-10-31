@@ -1,18 +1,19 @@
-# Activation Réécriture d'url
+Options +FollowSymlinks
+Options -Indexes
 RewriteEngine on
 
 # Force la connection HTTPS
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # Cache l'extention .php dans l'url
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php
 
-#Redirection sur erreur 404
-ErrorDocument 403 /?page=403
-ErrorDocument 404 /?page=404
+# Redirection sur erreur 404
+#ErrorDocument 403 /?page=403
+#ErrorDocument 404 /?page=404
 
 # Redirige vers sebastien
-# Redirect 301 / https://sebastien.rondeau-cameira.fr/
+#Redirect 301 / https://sebastien.rondeau-cameira.fr/
