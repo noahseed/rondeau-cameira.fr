@@ -11,8 +11,8 @@
     <meta name="revisit-after" content="1 month">
     <meta name="author" content="Sébastien RONDEAU-CAMEIRA">
     <title>rondeau-cameira.fr</title>
-    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" media="all" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="js/main.js"></script>
 </head>
 <body id="theme" class="theme-dark">
