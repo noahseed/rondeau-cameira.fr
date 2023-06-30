@@ -1,4 +1,4 @@
 User-agent : *
 Allow : /
 
-Sitemap: https://rondeau-cameira.fr/sitemap.xml
+Sitemap: https://www.rondeau-cameira.fr/sitemap.xml
