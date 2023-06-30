@@ -5,8 +5,8 @@
                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-		<loc>https://rondeau-cameira.fr/</loc>
-		<lastmod>2019-01-20T12:00:00+00:00</lastmod>
+		<loc>https://www.rondeau-cameira.fr/</loc>
+		<lastmod>2023-06-30T00:17:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.00</priority>
 	</url>
