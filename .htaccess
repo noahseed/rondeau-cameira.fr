@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+Options -Indexes
+
+RewriteEngine On
+
+# Redirect to sebastien
+Redirect 301 / https://sebastien.rondeau-cameira.fr/
+
