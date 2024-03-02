@@ -1,6 +1,3 @@
-Options +FollowSymlinks
-Options -Indexes
-
 RewriteEngine On
 
 # Redirect to sebastien
