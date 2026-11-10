@@ -1,7 +1,7 @@
 # www.rondeau-cameira.fr
 
 Page d’accueil statique donnant accès au site personnel de Sébastien
-Rondeau-Cameira : https://sebastien.rondeau-cameira.fr/.
+Rondeau Cameira : https://sebastien.rondeau-cameira.fr/.
 
 ## Fichiers
 
